@@ -444,4 +444,9 @@ public class SessionStub implements Session {
     public PathScope requirePathScope(String id) {
         return null;
     }
+
+    @Override
+    public Optional<Version> resolveHighestVersion(ArtifactCoordinates artifact, List<RemoteRepository> repositories) {
+        return Optional.empty();
+    }
 }
